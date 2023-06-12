@@ -1,0 +1,31 @@
+1. Execute the Last two commands:
+--> WIFI_FIRMWARE=y DISTRO=fsl-imx-xwayland MACHINE=edm-g-imx8mm source tn-setup-release.sh -b build
+--> bitbake core-image-minimal
+
+2. Create new Meta-Layer
+--> cd technexion_yocto/sources
+--> bitbake-layers create-layer ../sources/meta-varshil
+
+3. Add that layer
+--> bitbake-layers add-layer ../sources/meta-varshil
+
+4. Check Package (For Example I have package jinja2.10)
+--> technexion_yocto/sources/meta-open embedded/meta-python/recipes-devtools/python
+--> You can find there your given packages like I have jinja2 so I can find Jinja2 inc file and bb file. 
+--> You can find packages using the file command in Linux.
+
+--> Open their inc file in the new terminal and the bb file and copy both file using nano command
+--> Now go to your created meta-layer and see the structure.
+
+--> Go to meta-varshil and type this command: tree -L 2 recipes-example
+
+--> Rename (using mv command) the example bb file which will be present already when you create a custom meta layer
+--> Your example bb file name would be like jinja2_2.10.bb(packageName_version.bb)
+
+--> create inc file in that using nano command and paste it.
+--> copy and paste both bb and inc file
+
+--> Bitbake the package (for example python3-jinja2)
+--> go to conf/local.conf which will avaiable in build directory.
+--> IMAGE_INSTALL_append = "python3-jinja2"
+--> bitbake image 

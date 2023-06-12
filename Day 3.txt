@@ -1,0 +1,17 @@
+Questions:
+
+1. Why we use inherit cmake
+2. In SRC_URI why we define git first their?
+3. Why we PV in that and where we use their Version?
+4. Why we use Source PV?
+5. What is difference between depends and Rdepends in bitbake?
+
+--> create single patch on multiple file
+
+--> To see flash files:
+
+---> build/tmp/deploy/images/edm-g-images
+
+
+
+

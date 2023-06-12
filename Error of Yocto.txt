@@ -1,0 +1,16 @@
+Error of Yocto:
+
+1. File "/home/varshil/technexion_yocto/.repo/repo/main.py", line 79
+    file=sys.stderr)
+        ^
+SyntaxError: invalid syntax
+
+--> python3 ~/bin/repo/init -u https://github.com/TechNexion/tn-imx-yocto-manifest.git -b zeus_5.4.y-stable -m imx-5.4.70-2.3.0.xml
+--> python3 ~bin/repo sync -j8
+
+--> Refer this link: https://stackoverflow.com/questions/65193998/syntaxerror-invalid-syntax-to-repo-init-in-the-aosp-code
+
+
+2.Error during adding layer into your created meta-layer
+--> add that layer in build directory
+

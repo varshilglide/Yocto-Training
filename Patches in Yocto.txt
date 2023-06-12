@@ -1,0 +1,32 @@
+Patches:
+
+In technexion_yocto/build/tmp/work/aarch64-poky-linux/varshilremote/0.1/git/
+
+--> sudo apt install quilt
+
+Command:
+1. quilt new qtest.patch
+2. quilt add hello-world-git.c
+3. nano hello-world-git.c
+==> Now you can see some content in that file and now you have some changes in 
+    that file like press enter before return 0 statement and then save it.
+
+4. quilt refresh
+
+5. cd patches
+6. ls
+7. nano test.patch
+
+==> You can see the results in that.
+
+==> Now the next step is to add this file into the kernel.
+
+
+
+==> Now our Task is to create multiple-patches into single file.
+
+==> Device Tree
+==> Executable file
+
+
+

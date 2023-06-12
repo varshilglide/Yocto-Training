@@ -1,0 +1,55 @@
+Day 1:
+
+Custom 
+
+tech/build/
+--> check how many layers
+--> what is priority in yocto?
+--> create new meta layer
+--> perform last two commands
+
+
+--> create new layer
+ --> syntax: bitbake-layers create-layer ../sources/meta-yocto
+
+
+--> nano conf/bblayers.conf
+--> add in bblayer
+--> bitbake-layers add-layer ../sources/meta-yocto
+
+
+--> Now see how python recipe is created:
+check : site-packages
+
+folder: source/meta-python/recipe-devtools/python
+
+--> see recipe of engiio
+
+--> nano conf/local.conf
+IMAGE_INSTALL_append = "python-engineio-"
+
+--> How to integrate the old version with the new version of Python:
+
+--> Aim : create own recipe(Check if available)
+          How to set priorities 
+
+
+--> Custom meta layer and recipe
+
+Home Work:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

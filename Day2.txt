@@ -1,0 +1,51 @@
+How to local source in Yocto?
+How to add patch in Yocto?
+
+--> bblayers and local conf two local files in yocto
+
+
+Task 1: How to Include Local Source in Yocto-Project?
+
+--> 1. Set Environment
+--> Step:5 
+
+--> Source file can be multiple
+--> Google: How to Include Local Source In yocto project?
+--> tmp/work/aarch/local/--> ls
+--> cd 1.0
+--> cd image
+--> usr/bin --> hello
+
+Now remote source:
+
+--> tmp/work/aarch/remote/1.0 --> ls
+--> cd git and see all files which is clone
+
+
+==> Above all this for c code.
+
+--> Now we see for shell script
+
+
+Q: How to create a patch?
+->> \ means need one space.
+->> go to original file and their create new patch.
+->> gitdif and quilt
+--> create patch file using quilt
+--> quilt new patch -practice.patch
+--> add quilt on file : quilt add hello-world-git.c
+
+==> we create multi-patch of single file or multiple file.
+
+=> make some changes in file
+--> quilt refersh (it create patch)
+
+--> nano patches/patch-practice.patch
+
+--> 
+
+
+
+
+
+
